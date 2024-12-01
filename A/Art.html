@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GiGi Art</title>
+  <link rel="icon" href="../Images/Logo2.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Art-style.css">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="main-container">
+    <h1>Art Portfolio</h1>
+    <p>Status: <span class="status-open">Commission Open</span></p>
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/Gixy.Draw" target="_blank" class="social-button instagram">
+          <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+        </a>
+        <a href="https://x.com/xGiGixy" target="_blank" class="social-button twitter">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj-X06O3ppyMhQotOP_Km27fpwe0FgZGqXiA&s" alt="Twitter (X)">
+        </a>
+    </div>
+    <button class="main-button" onclick="window.location.href='../index.html';">Go to Principal</button>
+    <section class="terms-section">
+        <button class="terms-button" onclick="window.location.href='../T/terms.html';">Terms & Conditions</button>
+    </section>
+</div>
+</header>
+  
+
+
+  <main>
+    <section class="chibis-section">
+        <h2>Chibis</h2>
+        <div class="chibis-gallery">
+            <img src="../Images2/Chibi1.png" alt="Chibi 1" class="slideshow">
+            <img src="../Images2/Chibi2.jpeg" alt="Chibi 2" class="slideshow">
+            <img src="../Images2/Chibi3.png" alt="Chibi 3" class="slideshow">
+        </div>
+        <button class="prices-button" onclick="window.location.href='../C/Chibi.html';">More details</button>
+    </section>
+
+    <section class="chibis-section">
+        <h2>Style A</h2>
+        <div class="chibis-gallery">
+            <img src="../Images/A.png" alt="Style A 1" class="slideshow">
+            <img src="../Images/A2.png" alt="Style A 2" class="slideshow">
+            <img src="../Images/A3.png" alt="Style A 3" class="slideshow">
+        </div>
+        <button class="prices-button" onclick="window.location.href='../SA/StyleA.html';">More details</button>
+    </section>
+
+    <section class="chibis-section">
+        <h2>Style B</h2>
+        <div class="chibis-gallery">
+            <img src="../Images/B.png" alt="Style B 1" class="slideshow">
+            <img src="../Images/B2.png" alt="Style B 2" class="slideshow">
+            <img src="../Images/B3.png" alt="Style B 3" class="slideshow">
+        </div>
+        <button class="prices-button" onclick="window.location.href='../SB/StyleB.html';">More details</button>
+    </section>
+  </main>
+
+  <!-- Gallery Section -->
+  <div class="gallery-section">
+    <h2>Art Gallery</h2>
+    <div class="image-gallery">
+      <img src="../Images3/Gallery.png" alt="Image 1" onclick="openModal(this)">
+      <img src="../Images3/Gallery2.png" alt="Image 2" onclick="openModal(this)">
+      <img src="../Images3/Gallery3.png" alt="Image 3" onclick="openModal(this)">
+      <img src="../Images3/Gallery4.png" alt="Image 4" onclick="openModal(this)">
+      <img src="../Images3/Gallery5.jpg" alt="Image 5" onclick="openModal(this)">
+      <img src="../Images3/Gallery6.png" alt="Image 6" onclick="openModal(this)">
+      <img src="../Images3/Gallery7.jpg" alt="Image 7" onclick="openModal(this)">
+    </div>
+    <!-- Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+  </div>
+
+  <script src="Art.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    <p> ✨ Cooked with love by GiGi ✨ </p>
+    <p>&copy; 2024 GiGi. Todos los derechos reservados. </p>
+  </footer>
+</body>
+</html>

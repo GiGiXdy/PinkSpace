@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    background-color: #FFF0F6;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    padding: 20px;
+    background: linear-gradient(135deg, #D904A0, #FF5CC6);
+    text-align: center;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3.6em;
+  }
+  
+  .content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  
+  h2 {
+    font-size: 2.4em;
+    color: #D904A0;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #D904A0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .terms-list {
+    margin-left: 20px;
+  }
+  
+  .terms-list li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #730255;
+  }
+  
+  .btn-back {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 12px;
+    font-size: 1.4em;
+    background-color: #D904A0;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-back:hover {
+    background-color: #730255;
+  }
+
+  /* Selector de idioma */
+.language-selector {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Asegura que no haya desbordamiento horizontal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.language-selector button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #730255;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.language-selector button:hover {
+  background-color: #D904A0;
+}
+  
+  footer {
+    padding: 15px;
+    background-color: #D904A0;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

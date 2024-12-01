@@ -1,0 +1,400 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F88CE0;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+header, footer {
+    width: 100%;
+}
+
+/* Header */
+header {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #D904A0, #FF5CC6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4.8em;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.4em;
+    color: #730255;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.status-open {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.4em;
+}
+
+main p {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.4em;
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column; /* Apila elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    gap: 20px; /* Espaciado entre elementos */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    text-align: center; /* Centra el texto */
+}
+
+/* Chibis Section */
+.chibis-section {
+    margin: 40px auto;
+    text-align: center;
+    color: #FFF;
+}
+
+.chibis-section h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #730255;
+}
+
+
+
+.chibis-gallery {
+    position: relative;
+    width: 400px; /* Cambiado de 300px a 400px */
+    height: 400px; /* Cambiado de 300px a 400px */
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 20px; /* Aumentar curvatura si lo deseas */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideshow 9s infinite;
+}
+
+/* Ciclo de animación */
+.slideshow:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slideshow:nth-child(3) {
+    animation-delay: 6s;
+}
+
+
+/* Button */
+.prices-button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D904A0;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.prices-button:hover {
+    background-color: #730255;
+    transform: scale(1.05);
+}
+
+/* Estilos para los botones de redes sociales */
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-button {
+    font-size: 40px;  /* Tamaño adecuado para los íconos */
+    color: #fff;  /* Color blanco para los íconos */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.social-button img {
+    width: 40px;  /* Ajustar el tamaño del ícono */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.instagram {
+    background-color: #e44095; /* Color de fondo de Instagram */
+}
+
+.twitter {
+    background-color: #21323d; /* Color de fondo de Twitter/X */
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideshow 9s infinite;
+}
+
+
+/* Ciclo de animación */
+.slideshow:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slideshow:nth-child(3) {
+    animation-delay: 6s;
+}
+
+/* Footer */
+footer {
+    padding: 25px 20px;
+    background: #D904A0;
+    color: #fff;
+    font-size: 1.5em;
+    box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer:hover {
+    background-color: #730255;
+}
+
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 20px;
+    background-color: #FFD3E0; /* Fondo rosa claro */
+    text-align: center;
+    color: #730255; /* Texto oscuro para contraste */
+    background-size: cover; /* Asegura que el fondo cubra toda el área */
+}
+
+.gallery-section h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #730255;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre cuadros */
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); /* Efecto al pasar el cursor */
+}
+
+/* Asegura que no haya desbordamiento horizontal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+
+
+/* Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #D904A0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.terms-section {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.terms-button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #730255;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.terms-button:hover {
+    background-color: #D904A0;
+    transform: scale(1.05);
+}
+
+/* Estilos para el botón Go to Principal */
+.main-button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D904A0; /* Color principal */
+    color: #FFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 12px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.main-button:hover {
+    background-color: #730255; /* Cambio a un tono más oscuro */
+    transform: scale(1.1); /* Efecto de aumento */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+.main-button:active {
+    transform: scale(0.98); /* Efecto de presión */
+}
+
+
+/* Para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .chibis-section h2 {
+        font-size: 1.8em;
+    }
+
+    /* Reducir tamaño de los íconos de redes sociales */
+    .social-button img,
+    .social-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .image-gallery img {
+        width: 120px;
+        height: 120px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+    
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .gallery-section {
+        background-size: contain; /* Opcional: ajusta el fondo para que quepa en su contenedor */
+        background-position: center top; /* Opcional: ajusta la posición si es necesario */
+    }
+}
+
+@keyframes slideshow {
+    0% { opacity: 1; }     /* Imagen visible */
+    25% { opacity: 1; }    /* Mantiene la imagen completamente visible */
+    33.33% { opacity: 0; } /* Empieza a desvanecerse */
+    100% { opacity: 0; }   /* Imagen completamente invisible */
+}
+

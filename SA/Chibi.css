@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F88CE0;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+header, footer {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, #D904A0, #FF5CC6);
+}
+/* Asegura que no haya desbordamiento horizontal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+
+/* Header */
+header h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3.5em;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Pricing Section */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Permite que los cuadros se acomoden de manera flexible */
+    margin-top: 40px;
+    padding: 0 10px; /* Agrega un pequeño espacio a los lados */
+}
+
+.pricing-box {
+    background-color: #FFF;
+    color: #000;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Ancho fijo de los cuadros */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre los cuadros */
+    transition: transform 0.3s ease; /* Para animación de hover */
+}
+
+.pricing-box img {
+    width: 100%;
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 12px;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #730255;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Hover effect */
+.pricing-box:hover {
+    transform: scale(1.05);
+}
+
+/* Back Button Styles */
+.back-button {
+    background-color: #730255;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 50px; /* Aumenta el margen superior para separarlo más del footer */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #730255;
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    background-color: #B4007C;
+    transform: scale(0.98);
+}
+
+main {
+    padding-bottom: 80px; /* Asegura espacio suficiente antes del footer */
+}
+
+
+/* Footer */
+footer {
+    padding: 25px;
+    background: #D904A0;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 600px) {
+    .pricing-container {
+        flex-direction: column; /* Cambia la dirección de los cuadros a columna */
+        align-items: center; /* Centra los cuadros */
+    }
+
+    .pricing-box {
+        width: 90%; /* Los cuadros ocupan el 90% del ancho disponible */
+    }
+}
